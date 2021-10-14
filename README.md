@@ -13,3 +13,5 @@
 - AWS EC2 control : slack-slash-command-ec2.py
 - AWS RDS control : slack-slash-command-rds.py
 
+### Lambda Layer
+- slack-slash-command-layer.zip
