@@ -6,3 +6,10 @@
 ### Python Library
 - boto3
 - slackweb
+
+### Lambda List
+- Slack token authentication : slack-auth.py
+- AWS Autoscaling control : slack-slash-command-ag.py
+- AWS EC2 control : slack-slash-command-ec2.py
+- AWS RDS control : slack-slash-command-rds.py
+
