@@ -2,3 +2,7 @@
 
 ### Python
 - version 3. 6
+
+### Python Library
+- boto3
+- slackweb
