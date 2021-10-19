@@ -2,7 +2,14 @@ import json
 import boto3
 
 def check_token(token):
-    token_list = ["YOUER_SLACK_TOKEN"]
+    
+    ssm = boto3.client('ssm', region_name="ap-northeast-2")
+    response = ssm.get_parameter(Name='slack-token', WithDecryption=True)
+    
+    key = response['Parameter']['Value']
+    key = key.split(',')
+
+    token_list = key
     if token in token_list:
         return True
     else:
